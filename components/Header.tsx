@@ -9,10 +9,10 @@ import MobileMenu from "./MobileMenu";
 export default function Header() {
   const pathname = usePathname();
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-ink/10 bg-cream/92 backdrop-blur-xl">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-ink/10 bg-cream/96 lg:bg-cream/92 lg:backdrop-blur-xl">
       <div className="container-shell flex h-20 items-center justify-between gap-6">
         <Link href="/" aria-label="Hotel Stein Colonial — inicio" className="shrink-0">
-          <Image src="/images/logo.png" alt="Hotel Stein Colonial" width={155} height={130} className="h-[62px] w-auto object-contain" loading="eager" />
+          <Image src="/images/logo.png" alt="Hotel Stein Colonial" width={155} height={130} className="h-[62px] w-auto object-contain" loading="eager" unoptimized />
         </Link>
         <nav aria-label="Navegación principal" className="hidden items-center gap-5 lg:flex">
           {navItems.map((item) => (

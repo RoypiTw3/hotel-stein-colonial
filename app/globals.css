@@ -86,3 +86,7 @@ a, button, input, select, textarea { outline-offset: 4px; }
     transition-duration: 0.01ms !important;
   }
 }
+
+@media (max-width: 767px) {
+  .grain::before { display: none; }
+}

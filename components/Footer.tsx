@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-ink text-white">
       <div className="container-shell grid gap-12 py-16 md:grid-cols-[1.15fr_.8fr_1fr] md:py-20">
         <div>
-          <Image src="/images/logo.png" alt="Hotel Stein Colonial" width={155} height={130} className="h-24 w-auto rounded bg-white object-contain p-2" />
+          <Image src="/images/logo.png" alt="Hotel Stein Colonial" width={155} height={130} className="h-24 w-auto rounded bg-white object-contain p-2" unoptimized />
           <p className="mt-6 max-w-sm text-sm leading-7 text-white/65">Atención cercana, espacios coloniales y zonas verdes en el corazón de Cali.</p>
         </div>
         <div>

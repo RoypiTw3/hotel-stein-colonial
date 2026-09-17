@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative mb-56 min-h-[48rem] overflow-visible pt-20 sm:mb-28 sm:min-h-[44rem]">
       <div className="image-wash grain absolute inset-x-0 top-20 h-[calc(100%-5rem)] overflow-hidden">
-        <Image src="/images/pool.jpg" alt="Piscina rodeada por la arquitectura colonial y los jardines del Hotel Stein Colonial" fill priority sizes="100vw" className="object-cover object-center" />
+        <Image src="/images/pool.jpg" alt="Piscina rodeada por la arquitectura colonial y los jardines del Hotel Stein Colonial" fill priority quality={70} sizes="100vw" className="object-cover object-center" />
       </div>
       <div className="container-shell relative z-10 flex min-h-[48rem] items-center pb-32 pt-16 sm:min-h-[44rem] sm:pb-24">
         <div className="reveal-up max-w-3xl text-white">
