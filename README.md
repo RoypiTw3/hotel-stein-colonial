@@ -18,6 +18,8 @@ Abre `http://localhost:3000`.
 - Servicios: `data/services.ts`
 - Planes: `data/plans.ts`
 - Reseñas: `data/reviews.ts`
+- Carta del restaurante: `data/menu.ts`
+- Cartas originales en PDF: `public/menu/`
 - Fotografías: `public/images/`
 
 La URL editable del motor de reservas está en `data/site.ts`, propiedad `bookingUrl`.

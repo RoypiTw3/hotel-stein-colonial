@@ -18,7 +18,7 @@ export default function ContactoPage() {
               <div className="border-t border-ink/15 pt-5"><dt className="font-semibold text-ink">Dirección</dt><dd className="mt-2 leading-6 text-stone">{site.address}</dd></div>
               <div className="border-t border-ink/15 pt-5"><dt className="font-semibold text-ink">Teléfonos</dt><dd className="mt-2 text-stone"><a href={`tel:${site.phones[0]}`}>{site.phoneDisplay}</a></dd></div>
               <div className="border-t border-ink/15 pt-5"><dt className="font-semibold text-ink">Correo</dt><dd className="mt-2 text-stone"><a href={`mailto:${site.email}`}>{site.email}</a></dd></div>
-              <div className="border-t border-ink/15 pt-5"><dt className="font-semibold text-ink">Horarios</dt><dd className="mt-2 text-stone">Consultar</dd></div>
+              <div className="border-t border-ink/15 pt-5"><dt className="font-semibold text-ink">Horario del restaurante</dt><dd className="mt-2 leading-6 text-stone">Almuerzo: {site.restaurantHours.lunch}<br />Cena: {site.restaurantHours.dinner}</dd></div>
             </dl>
           </div>
           <div className="rounded-xl bg-sand p-6 sm:p-10"><h2 className="font-serif text-4xl tracking-[-0.03em]">Envíanos un mensaje</h2><p className="mb-8 mt-3 text-sm leading-6 text-stone">Cuéntanos qué necesitas y te responderemos por el canal que elijas.</p><ContactForm /></div>

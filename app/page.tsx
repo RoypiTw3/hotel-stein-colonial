@@ -11,6 +11,7 @@ import ServiceItem from "@/components/ServiceItem";
 import VideoEmbed from "@/components/VideoEmbed";
 import { reviews } from "@/data/reviews";
 import { rooms } from "@/data/rooms";
+import { site } from "@/data/site";
 
 const highlights = [
   { name: "Parque infantil", icon: "tree" as const },
@@ -58,7 +59,7 @@ export default function Home() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-xl lg:order-1"><Image src="/images/restaurant-dining.jpg" alt="Restaurante del Hotel Stein Colonial" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" /></div>
           <div className="lg:order-2">
             <SectionHeading eyebrow="Nuestro restaurante" title="Sabores preparados cada día" description="Contamos con servicio de restaurante a la carta. Deliciosos platos son preparados por nuestro chef diariamente para deleite de nuestros huéspedes." />
-            <div className="mt-7 border-l-2 border-terracotta pl-5 text-sm font-semibold text-terracotta">Debes hacer reserva previa.</div>
+            <div className="mt-7 border-l-2 border-terracotta pl-5 text-sm leading-6 text-stone"><strong className="block text-terracotta">Reserva previa requerida</strong>Almuerzo: {site.restaurantHours.lunch}<br />Cena: {site.restaurantHours.dinner}</div>
             <Button href="/restaurante" className="mt-8">Conoce la carta <Icon name="arrow" className="h-4 w-4" /></Button>
           </div>
         </div>

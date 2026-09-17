@@ -24,6 +24,9 @@ export default function Footer() {
             <p><a href={`tel:${site.phones[0]}`} className="hover:text-white">{site.phoneDisplay}</a></p>
             <p><a href={`mailto:${site.email}`} className="hover:text-white">{site.email}</a></p>
           </address>
+          <p className="mt-5 text-xs leading-5 text-white/50">
+            Restaurante: almuerzo {site.restaurantHours.lunch}<br />cena {site.restaurantHours.dinner}
+          </p>
           <div className="mt-6 flex gap-5 text-sm">
             <a href={site.facebook} target="_blank" rel="noreferrer" className="hover:text-sand">Facebook</a>
             <a href={site.instagram} target="_blank" rel="noreferrer" className="hover:text-sand">Instagram</a>
